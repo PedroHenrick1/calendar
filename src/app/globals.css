@@ -31,3 +31,10 @@ body {
     text-wrap: balance;
   }
 }
+
+.side-bar {
+    margin: 10px;
+    display: grid;
+    justify-content: wrap; 
+    background-color: red;
+}
