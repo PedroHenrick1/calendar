@@ -2,39 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.main-container{
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.login {
+  width: 600px;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff10;
+  border: 2px solid #ffffff30;
+  backdrop-filter: blur(10px);
+}
+
+.bar {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff10;
+  border: 2px solid #ffffff30;
+  backdrop-filter: blur(10px);
+  margin-bottom: 100px;
+}
+
+.notes {
+  position: absolute;
+  left: 400px;
+  top: 100px;
+}
+
+input, textarea {
+  width: 90%; 
+  height: 40px;
+  border-radius: 5px;
+  margin: 20px;
+  border: 2px solid #ffffff30;
+  background: #ffffff30;
+}
+
+
+
+
+
+/* @media (max-width: 1920px){
+  .main-container {
+    width: 100%;
+    height: 100%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@media (max-width: 992px){
+  .main-container {
+    width: 100%;
+    max-width: 100%;
+  }
+} */
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+
 }
 
-.side-bar {
-    margin: 10px;
-    display: grid;
-    justify-content: wrap; 
-    background-color: red;
-}
+
+
+
