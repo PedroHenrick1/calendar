@@ -7,7 +7,7 @@ import NavLinks from '@/app/components/nav-bar';
 
 export default function Login() {
   return (
-    <div className="main-container flex items-center">
+    <div className="main-container flex items-center bg-[url('/images/background-image-1.jpg')] flex-col">
       <NavLinks/>
       <div className="login shadow-lg shadow-black/50">
         <h1 className="text-h1 mb-12">Login</h1>
@@ -26,7 +26,7 @@ export default function Login() {
             </div>
 
             </div>
-            <Link className="flex justify-center hover:text-white ease-in duration-300 underline decoration-solid" href="/cadastrar">Não tem conta? Clique aqui para se cadastrar</Link>
+            <Link className="flex justify-center hover:text-white ease-in duration-300 underline decoration-solid" href="#">Não tem conta? Clique aqui para se cadastrar</Link>
         </form>
       </div>
     </div>
